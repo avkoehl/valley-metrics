@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "valleym"
+version = "0.1.0"
+description = "Extract continuous width and depth measurements for a valley network"
+authors = ["Arthur Koehl <avkoehl@ucdavis.edu>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+geopandas = "^1.0.1"
+pandas = "^2.2.3"
+shapely = "^2.0.7"
+rioxarray = "^0.18.2"
+scipy = "^1.15.1"
+numba = "^0.61.0"
+numpy = "2.1.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.32.0"
+matplotlib = "^3.10.0"
+jupyter = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
