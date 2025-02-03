@@ -18,9 +18,9 @@ doesn't need valley floors delineated, just the river network and dem
 Decide between the two methods for valley depth calculation, and pick the best
 
 1. 
-    + Detect ridge pixels (flow accumulation = 0, or that matlib library that does ridge network analysis, or the ridge network from usgs valley depth module's method, or potential whiteboxtools method) 
+    + Detect ridge pixels (flow accumulation = 0, or that matlib library that does ridge network analysis, or the ridge network from saga valley depth module's method, or potential whiteboxtools method) 
     + for each pixel in the river network, get its catchment id, and then find the nearest ridge point for all the hillslope ids in its neighborhood and the valley depth is thus the mean of the differences between the different peak dem values and the river pixel dem value.
-2. USGS valley depth module
+2. saga valley depth module
 
 can compare these with field measurments of valley depth and width
 
